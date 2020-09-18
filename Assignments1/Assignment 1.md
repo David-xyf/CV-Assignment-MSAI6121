@@ -1,5 +1,7 @@
 # Assignment 1
 
+> All materials about assginment1 have been pushed on my Github: https://github.com/David-xyf/CV-Assignment-MSAI6121/tree/master/Assignments1
+
 ## 1. Implement and apply the HE algorithm
 
 ### 1.1 Introduce the image histogram
@@ -7,7 +9,7 @@
 - It is a graphical representation of the intensity distribution of an image.
 - It quantifies the number of pixels for each intensity value considered.
 
-![](F:\CV\assignments\Assignments1\introHist.png)
+![](pictures\introHist.png)
 
 > The picture is from https://docs.opencv.org/master/d4/d1b/tutorial_histogram_equalization.html
 
@@ -19,7 +21,7 @@
 
   > Wikipedia contributors. (2020, September 7). Histogram equalization. In *Wikipedia, The Free Encyclopedia*. Retrieved 02:56, September 18, 2020, from https://en.wikipedia.org/w/index.php?title=Histogram_equalization&oldid=977182912
 
-![](F:\CV\assignments\Assignments1\introHE.png)
+![](pictures\introHE.png)
 
 > The picture is from https://docs.opencv.org/master/d4/d1b/tutorial_histogram_equalization.html
 
@@ -127,22 +129,18 @@ In order to implement the HE algorithm, I make 3 steps to improve the HE algorit
 
 Show histograms of probability-gray pixels and compare the gap between the original samples and samples handled by my implemented algorithm.
 
-<div align="center"><img src="F:\CV\assignments\Assignments1\gray ori vs he.png" style="zoom:80%;"/></div>
-<div align="center"><img src="F:\CV\assignments\Assignments1\composed_images_gray_res.jpg"  style="zoom:70%;"/> compare the enhancement (first 8) with original images (last 8)</div>
-
+<div align="center"><img src="pictures\gray ori vs he.png" style="zoom:80%;"/></div>
+<div align="center"><img src="pictures\composed_images_gray_res.jpg"  style="zoom:70%;"/> compare the enhancement (first 8) with original images (last 8)</div>
 #### 1.5.2 Apply HE algorithm in RGB channels
 
-<div align="center"><img src="F:\CV\assignments\Assignments1\ori vs HE_1.png"/></div>
-<div align="center"><img src="F:\CV\assignments\Assignments1\images_compose.jpg"  />8 original images</div>
-
-
-<div align="center"><img src="F:\CV\assignments\Assignments1\RGB3channel_res.jpg"  />8 images by function 'RGB_histEqAlgo2'</div>
+<div align="center"><img src="pictures\ori vs HE_1.png"/></div>
+<div align="center"><img src="pictures\images_compose.jpg"  />8 original images</div>
+<div align="center"><img src="pictures\RGB3channel_res.jpg"  />8 images by function 'RGB_histEqAlgo2'</div>
 #### 1.5.3 Apply improved HE algorithm in RGB channels
 
-<div align="center"><img src="F:\CV\assignments\Assignments1\ori vs HE_2.png"/</div>
-<div align="center"><img src="F:\CV\assignments\Assignments1\images_compose.jpg" />8 original images</div>
-
-<div align="center"><img src="F:\CV\assignments\Assignments1\images_compose_res.jpg"/>8 images by function 'RGB_histEqAlgo3'</div>
+<div align="center"><img src="pictures\ori vs HE_2.png"/</div>
+<div align="center"><img src="pictures\images_compose.jpg" />8 original images</div>
+<div align="center"><img src="pictures\mages_compose_res.jpg"/>8 images by function 'RGB_histEqAlgo3'</div>
 ## 2.Discuss features of HE algorithm
 
 #### 2.1 the pro and con of HE algorithm
@@ -224,11 +222,10 @@ end
 
 
 
-<div align="center"><img src="F:\CV\assignments\Assignments1\clahe_res.jpg" />enhanced samples by CLAHE</div>
-<div align="center"><img src="F:\CV\assignments\Assignments1\CLAHE_samples_histogram.jpg" /></div><div align="center">histogram of 8 enhanced samples by CLAHE</div>
-
+<div align="center"><img src="pictures\clahe_res.jpg" />enhanced samples by CLAHE</div>
+<div align="center"><img src="pictures\CLAHE_samples_histogram.jpg" /></div><div align="center">histogram of 8 enhanced samples by CLAHE</div>
 #### Comparison between 3 kinds of histograms and images
 
-<div align="center"><img src="F:\CV\assignments\Assignments1\Conclusion_histogram.png" /></div>
-<div align="center"><img src="F:\CV\assignments\Assignments1\comparision.jpg" />original images(last 8) samples by HE(medium 8) samples by CLAHE(last 8)</div>
+<div align="center"><img src="pictures\Conclusion_histogram.png" /></div>
+<div align="center"><img src="pictures\comparision.jpg" />original images(last 8) samples by HE(medium 8) samples by CLAHE(last 8)</div>
 From above comparison, we can know that although the enhancements by HE are brighter than these by CLAHE,  there is not too light or too dark area in images by CLAHE and images by CLAHE are more real than the images by HE.
